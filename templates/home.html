@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <h1>Welcome To SAThub</h1>
+    <p class="lead">A community for SAT aspirants</p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+  </div>
+
+<center><div style="white-space: nowrap;">
+  <div class="jumbotron text-center " style="width:30%;display:inline-block;">
+
+    <h2>Discussions</h2>
+    <p class="lead">SAThub</p>
+    {% if session.logged_in == NULL %}
+<a href="" class="btn btn-success btn-lg">Click Here</a>
+    {% endif %}
+  </div>
+  <div class="jumbotron text-center " style="width:30%;display:inline-block;">
+
+    <center><h3>Recommended Material</h3><center>
+    <p class="lead">SAThub</p>
+    {% if session.logged_in == NULL %}
+<a href="" class="btn btn-success btn-lg">Click Here</a>
+    {% endif %}
+  </div>
+  <div class="jumbotron text-center " style="width:30%;display:inline-block;">
+
+    <h2>Current Meetups</h2>
+    <p class="lead">SAThub</p>
+    {% if session.logged_in == NULL %}
+<a href="/event" class="btn btn-success btn-lg">Click Here</a>
+    {% endif %}
+  </div>
+  </div></center>
+  <center><div style="white-space: nowrap;">
+    <div class="jumbotron text-center " style="width:30%;display:inline-block;">
+
+      <h2>Sample Papers</h2>
+      <p class="lead">SAThub</p>
+      {% if session.logged_in == NULL %}
+  <a href="" class="btn btn-success btn-lg">Click Here</a>
+      {% endif %}
+    </div>
+    <div class="jumbotron text-center " style="width:30%;display:inline-block;">
+
+      <h2>SAT Dates</h2>
+      <p class="lead">SAThub</p>
+      {% if session.logged_in == NULL %}
+  <a href="" class="btn btn-success btn-lg">Click Here</a>
+      {% endif %}
+    </div>
+    <div class="jumbotron text-center " style="width:30%;display:inline-block;">
+
+      <h2>Important Tips</h2>
+      <p class="lead">SAThub</p>
+      {% if session.logged_in == NULL %}
+  <a href="" class="btn btn-success btn-lg">Click Here</a>
+      {% endif %}
+    </div>
+    </div></center>
+{% endblock %}
